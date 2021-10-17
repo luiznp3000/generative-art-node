@@ -146,6 +146,7 @@ const createFiles = async edition => {
      numDupes++;
      if (numDupes > edition) break; //prevents infinite loop if no more unique items can be created
      i--;
+     hash =[];
    } else {
      Exists.set(key, i);
      addMetadata(i);
